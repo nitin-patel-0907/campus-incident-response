@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Tab Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-section { margin: 20px 0; padding: 15px; border: 1px solid #ddd; border-radius: 5px; }
+        .success { background-color: #d4edda; border-color: #c3e6cb; }
+        .error { background-color: #f8d7da; border-color: #f5c6cb; }
+        .info { background-color: #d1ecf1; border-color: #bee5eb; }
+        button { padding: 10px 15px; margin: 5px; cursor: pointer; }
+        pre { background: #f8f9fa; padding: 10px; border-radius: 3px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <h1>Performance Tab Frontend Test</h1>
+    
+    <div class="test-section info">
+        <h3>Test Instructions</h3>
+        <p>This page tests if the Performance tab is accessible and working properly.</p>
+        <p><strong>Server should be running on:</strong> http://localhost:8080</p>
+    </div>
+
+    <div class="test-section">
+        <h3>1. Test Performance API Endpoint</h3>
+        <button onclick="testPerformanceAPI()">Test Performance API</button>
+        <div id="api-result"></div>
+    </div>
+
+    <div class="test-section">
+        <h3>2. Test Frontend Navigation</h3>
+        <button onclick="testFrontendNavigation()">Open Performance Tab</button>
+        <p>This will open the Performance tab in a new window.</p>
+    </div>
+
+    <div class="test-section">
+        <h3>3. Test Spam Patterns API</h3>
+        <button onclick="testSpamAPI()">Test Spam Patterns</button>
+        <div id="spam-result"></div>
+    </div>
+
+    <div class="test-section">
+        <h3>4. Submit Test Incident</h3>
+        <button onclick="submitTestIncident()">Submit Test Incident</button>
+        <div id="incident-result"></div>
+    </div>
+
+    <script>
+        async function testPerformanceAPI() {
+            const resultDiv = document.getElementById('api-result');
+            resultDiv.innerHTML = '<p>Testing...</p>';
+            
+            try {
+                const response = await fetch('/api/v1/analytics/performance-insights');
+                const data = await response.json();
+                
+                if (data.success) {
+                    resultDiv.innerHTML = `
+                        <div class="success">
+                            <h4>✅ Performance API Working</h4>
+                            <pre>${JSON.stringify(data, null, 2)}</pre>
+                        </div>
+                    `;
+                } else {
+                    resultDiv.innerHTML = `
+                        <div class="error">
+                            <h4>❌ API Error</h4>
+                            <pre>${JSON.stringify(data, null, 2)}</pre>
+                        </div>
+                    `;
+                }
+            } catch (error) {
+                resultDiv.innerHTML = `
+                    <div class="error">
+                        <h4>❌ Network Error</h4>
+                        <p>${error.message}</p>
+                    </div>
+                `;
+            }
+        }
+
+        function testFrontendNavigation() {
+            // Open performance tab in new window
+            window.open('/performance', '_blank');
+        }
+
+        async function testSpamAPI() {
+            const resultDiv = document.getElementById('spam-result');
+            resultDiv.innerHTML = '<p>Testing...</p>';
+            
+            try {
+                const response = await fetch('/api/v1/spam/patterns');
+                const data = await response.json();
+                
+                if (data.success) {
+                    resultDiv.innerHTML = `
+                        <div class="success">
+                            <h4>✅ Spam API Working</h4>
+                            <p>Found ${data.patterns.length} spam patterns</p>
+                            <pre>${JSON.stringify(data.patterns.slice(0, 2), null, 2)}</pre>
+                        </div>
+                    `;
+                } else {
+                    resultDiv.innerHTML = `
+                        <div class="error">
+                            <h4>❌ Spam API Error</h4>
+                            <pre>${JSON.stringify(data, null, 2)}</pre>
+                        </div>
+                    `;
+                }
+            } catch (error) {
+                resultDiv.innerHTML = `
+                    <div class="error">
+                        <h4>❌ Network Error</h4>
+                        <p>${error.message}</p>
+                    </div>
+                `;
+            }
+        }
+
+        async function submitTestIncident() {
+            const resultDiv = document.getElementById('incident-result');
+            resultDiv.innerHTML = '<p>Submitting...</p>';
+            
+            const incidentData = {
+                "report": "Test incident for performance metrics - A student reported suspicious activity near the dormitory entrance. This requires immediate attention from security personnel.",
+                "metadata": {
+                    "incident_type": "security",
+                    "severity": "high",
+                    "location": "Dormitory Entrance",
+                    "anonymous": false,
+                    "contact_info": "performance.test@university.edu"
+                }
+            };
+            
+            try {
+                const response = await fetch('/api/v1/incidents/process', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(incidentData)
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    resultDiv.innerHTML = `
+                        <div class="success">
+                            <h4>✅ Incident Submitted Successfully</h4>
+                            <p>Status: ${data.result?.status || 'N/A'}</p>
+                            <p>This should generate performance data for the Performance tab.</p>
+                            <button onclick="testPerformanceAPI()">Refresh Performance Data</button>
+                        </div>
+                    `;
+                } else {
+                    resultDiv.innerHTML = `
+                        <div class="error">
+                            <h4>❌ Incident Submission Failed</h4>
+                            <pre>${JSON.stringify(data, null, 2)}</pre>
+                        </div>
+                    `;
+                }
+            } catch (error) {
+                resultDiv.innerHTML = `
+                    <div class="error">
+                        <h4>❌ Network Error</h4>
+                        <p>${error.message}</p>
+                    </div>
+                `;
+            }
+        }
+
+        // Auto-test on page load
+        window.onload = function() {
+            console.log('Performance Tab Test Page Loaded');
+            console.log('Server should be running on: http://localhost:8080');
+        };
+    </script>
+</body>
+</html>

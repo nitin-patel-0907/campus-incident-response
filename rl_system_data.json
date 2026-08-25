@@ -1,0 +1,41 @@
+{
+  "incidents": [],
+  "spam_patterns": [
+    {
+      "pattern_id": "SPAM-20260825192057-a8d3e9e6",
+      "text_hash": "a8d3e9e6016a16faccb5578313d0c554",
+      "similarity_threshold": 0.85,
+      "keywords": [
+        "laptop",
+        "stolen",
+        "from",
+        "library",
+        "study",
+        "room",
+        "monday",
+        "afternoon."
+      ],
+      "marked_spam_count": 1,
+      "false_positive_count": 0,
+      "confidence": 0.85,
+      "created_at": "2026-08-25T19:20:57.644385",
+      "last_seen": "2026-08-25T19:20:57.644385",
+      "reason": "Manual admin review",
+      "pattern_type": "human_verified",
+      "is_gibberish": false,
+      "human_assessment": "Human marked as spam",
+      "original_text": "A laptop was stolen from the library study room on Monday afternoon."
+    }
+  ],
+  "performance_metrics": [],
+  "learning_stats": {
+    "total_incidents": 0,
+    "spam_detected": 1,
+    "false_positives": 0,
+    "ai_vs_human_comparisons": 0,
+    "system_accuracy": 0.0,
+    "last_updated": "2026-08-25T19:20:57.644385"
+  },
+  "confidence_improvements": {},
+  "decision_rewards": {}
+}

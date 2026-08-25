@@ -1,0 +1,1061 @@
+{
+  "incidents": [
+    {
+      "incident_id": "PERSIST-TEST-001",
+      "incident_type": "test",
+      "severity": "low",
+      "original_report": "This is a persistence test incident",
+      "stages": {
+        "evaluator": {
+          "confidence_index": {
+            "overall_confidence": 75.0,
+            "confidence_level": "medium",
+            "resolution_recommendation": "supervised"
+          }
+        }
+      },
+      "rl_metadata": {
+        "added_at": "2026-01-31T05:22:20.893381",
+        "incident_number": 1,
+        "processing_time": 0,
+        "resources_used": 1,
+        "confidence_analysis": {},
+        "learning_applied": true,
+        "similar_incidents_count": 0,
+        "historical_context": {
+          "message": "No similar incidents in history"
+        }
+      },
+      "resolution_data": {
+        "human_reviewed": true,
+        "resolved_by_human": true,
+        "human_processing_time": 807.9797347823529,
+        "human_resources_used": 4.344408992794814,
+        "human_accuracy": 0.9104406795340925,
+        "human_review_date": "2026-01-31T06:57:24.300556",
+        "human_decision": "approved_with_modifications",
+        "human_notes": "Human review completed for test incident. Additional oversight applied.",
+        "resolution_status": "resolved_by_human"
+      }
+    },
+    {
+      "incident_id": "PERSIST-TEST-001",
+      "incident_type": "test",
+      "severity": "low",
+      "original_report": "This is a persistence test incident",
+      "stages": {
+        "evaluator": {
+          "confidence_index": {
+            "overall_confidence": 75.0,
+            "confidence_level": "medium",
+            "resolution_recommendation": "supervised"
+          }
+        }
+      },
+      "rl_metadata": {
+        "added_at": "2026-01-31T05:22:57.007127",
+        "incident_number": 2,
+        "processing_time": 0,
+        "resources_used": 1,
+        "confidence_analysis": {},
+        "learning_applied": true,
+        "similar_incidents_count": 1,
+        "historical_context": {
+          "similar_count": 1,
+          "average_confidence": 0,
+          "common_resolution": "unknown",
+          "trend": "stable"
+        }
+      },
+      "resolution_data": {
+        "human_reviewed": true,
+        "resolved_by_human": true,
+        "human_processing_time": 488.6092796517148,
+        "human_resources_used": 3.8153050826984893,
+        "human_accuracy": 0.900052224975228,
+        "human_review_date": "2026-01-31T06:57:24.301804",
+        "human_decision": "approved_with_modifications",
+        "human_notes": "Human review completed for test incident. Additional oversight applied.",
+        "resolution_status": "resolved_by_human"
+      }
+    },
+    {
+      "incident_id": "INC-20260131064349",
+      "incident_type": "maintenance",
+      "severity": "low",
+      "original_report": "Routine maintenance request: The fluorescent light in Room 204 of the Mathematics Building is flickering and needs replacement. This is a standard maintenance issue that occurs regularly. The room number is clearly marked, and the issue is straightforward. Maintenance staff can access the room during normal business hours. No safety hazards are present, and this is a low-priority routine repair that can be scheduled during the next available maintenance window.",
+      "stages": {
+        "evaluator": {
+          "confidence_index": {
+            "overall_confidence": 66.0,
+            "confidence_level": "medium",
+            "resolution_recommendation": "autonomous",
+            "factor_scores": {
+              "prompt_quality": 62.5,
+              "image_authenticity": 60.0,
+              "description_completeness": 55.0,
+              "incident_complexity": 95.0,
+              "historical_success": 70.0
+            },
+            "confidence_reasoning": [
+              "Medium confidence: Most factors are reliable with some areas of concern",
+              "Strong incident complexity: 95.0% - Excellent quality"
+            ],
+            "intervention_triggers": [],
+            "threshold_analysis": {
+              "autonomous_threshold": 55.0,
+              "human_intervention_threshold": 35.0,
+              "current_score": 66.0,
+              "can_resolve_autonomously": true,
+              "requires_human_intervention": false
+            }
+          }
+        }
+      },
+      "rl_metadata": {
+        "added_at": "2026-01-31T06:43:49.835595",
+        "incident_number": 3,
+        "processing_time": 2.0,
+        "resources_used": 1.5,
+        "confidence_analysis": {
+          "overall_confidence": 66.0,
+          "confidence_level": "medium",
+          "resolution_recommendation": "autonomous",
+          "factor_scores": {
+            "prompt_quality": 62.5,
+            "image_authenticity": 60.0,
+            "description_completeness": 55.0,
+            "incident_complexity": 95.0,
+            "historical_success": 70.0
+          },
+          "confidence_reasoning": [
+            "Medium confidence: Most factors are reliable with some areas of concern",
+            "Strong incident complexity: 95.0% - Excellent quality"
+          ],
+          "intervention_triggers": [],
+          "threshold_analysis": {
+            "autonomous_threshold": 55.0,
+            "human_intervention_threshold": 35.0,
+            "current_score": 66.0,
+            "can_resolve_autonomously": true,
+            "requires_human_intervention": false
+          }
+        },
+        "learning_applied": true,
+        "similar_incidents_count": 0,
+        "historical_context": {
+          "message": "Synced from real incidents"
+        }
+      },
+      "resolution_data": {
+        "resolved_by_ai": true,
+        "ai_processing_time": 2.0,
+        "ai_resources_used": 1.5,
+        "ai_accuracy": 0.66,
+        "resolution_status": "resolved"
+      }
+    },
+    {
+      "incident_id": "INC-20260131064356",
+      "incident_type": "maintenance",
+      "severity": "low",
+      "original_report": "Standard IT support request: A faculty member in the Computer Science Department reports that their office printer (HP LaserJet Pro in Room CS-301) is displaying a 'toner low' warning message. This is a routine maintenance issue that requires toner cartridge replacement. The printer model is HP LaserJet Pro 4025n, and replacement toner cartridges are available in the IT supply room. The printer is still functional but will need toner replacement within the next few days. This is a standard, low-priority maintenance request that can be handled through normal IT support channels.",
+      "stages": {
+        "evaluator": {
+          "confidence_index": {
+            "overall_confidence": 66.25,
+            "confidence_level": "medium",
+            "resolution_recommendation": "autonomous",
+            "factor_scores": {
+              "prompt_quality": 60.0,
+              "image_authenticity": 60.0,
+              "description_completeness": 60.0,
+              "incident_complexity": 95.0,
+              "historical_success": 70.0
+            },
+            "confidence_reasoning": [
+              "Medium confidence: Most factors are reliable with some areas of concern",
+              "Strong incident complexity: 95.0% - Excellent quality"
+            ],
+            "intervention_triggers": [],
+            "threshold_analysis": {
+              "autonomous_threshold": 55.0,
+              "human_intervention_threshold": 35.0,
+              "current_score": 66.25,
+              "can_resolve_autonomously": true,
+              "requires_human_intervention": false
+            }
+          }
+        }
+      },
+      "rl_metadata": {
+        "added_at": "2026-01-31T06:43:56.981794",
+        "incident_number": 4,
+        "processing_time": 2.0,
+        "resources_used": 1.5,
+        "confidence_analysis": {
+          "overall_confidence": 66.25,
+          "confidence_level": "medium",
+          "resolution_recommendation": "autonomous",
+          "factor_scores": {
+            "prompt_quality": 60.0,
+            "image_authenticity": 60.0,
+            "description_completeness": 60.0,
+            "incident_complexity": 95.0,
+            "historical_success": 70.0
+          },
+          "confidence_reasoning": [
+            "Medium confidence: Most factors are reliable with some areas of concern",
+            "Strong incident complexity: 95.0% - Excellent quality"
+          ],
+          "intervention_triggers": [],
+          "threshold_analysis": {
+            "autonomous_threshold": 55.0,
+            "human_intervention_threshold": 35.0,
+            "current_score": 66.25,
+            "can_resolve_autonomously": true,
+            "requires_human_intervention": false
+          }
+        },
+        "learning_applied": true,
+        "similar_incidents_count": 0,
+        "historical_context": {
+          "message": "Synced from real incidents"
+        }
+      },
+      "resolution_data": {
+        "resolved_by_ai": true,
+        "ai_processing_time": 2.0,
+        "ai_resources_used": 1.5,
+        "ai_accuracy": 0.6625,
+        "resolution_status": "resolved"
+      }
+    },
+    {
+      "incident_id": "INC-20260131064403",
+      "incident_type": "maintenance",
+      "severity": "low",
+      "original_report": "Routine cleaning request: The whiteboard in Lecture Hall B needs cleaning. Students have reported that the whiteboard markers are not erasing properly due to buildup of marker residue. This is a standard cleaning issue that occurs regularly in high-use classrooms. The custodial staff can address this during their regular cleaning schedule using standard whiteboard cleaning solution. No special equipment or urgent response is required. This is a low-priority routine maintenance item that can be completed during the next scheduled cleaning cycle.",
+      "stages": {
+        "evaluator": {
+          "confidence_index": {
+            "overall_confidence": 59.5,
+            "confidence_level": "low",
+            "resolution_recommendation": "autonomous",
+            "factor_scores": {
+              "prompt_quality": 62.5,
+              "image_authenticity": 60.0,
+              "description_completeness": 70.0,
+              "incident_complexity": 45.0,
+              "historical_success": 50.0
+            },
+            "confidence_reasoning": [
+              "Low confidence: Multiple factors indicate need for human verification",
+              "Weak incident complexity: 45.0% - Requires attention"
+            ],
+            "intervention_triggers": [],
+            "threshold_analysis": {
+              "autonomous_threshold": 55.0,
+              "human_intervention_threshold": 35.0,
+              "current_score": 59.5,
+              "can_resolve_autonomously": true,
+              "requires_human_intervention": false
+            }
+          }
+        }
+      },
+      "rl_metadata": {
+        "added_at": "2026-01-31T06:44:03.387834",
+        "incident_number": 5,
+        "processing_time": 2.0,
+        "resources_used": 1.5,
+        "confidence_analysis": {
+          "overall_confidence": 59.5,
+          "confidence_level": "low",
+          "resolution_recommendation": "autonomous",
+          "factor_scores": {
+            "prompt_quality": 62.5,
+            "image_authenticity": 60.0,
+            "description_completeness": 70.0,
+            "incident_complexity": 45.0,
+            "historical_success": 50.0
+          },
+          "confidence_reasoning": [
+            "Low confidence: Multiple factors indicate need for human verification",
+            "Weak incident complexity: 45.0% - Requires attention"
+          ],
+          "intervention_triggers": [],
+          "threshold_analysis": {
+            "autonomous_threshold": 55.0,
+            "human_intervention_threshold": 35.0,
+            "current_score": 59.5,
+            "can_resolve_autonomously": true,
+            "requires_human_intervention": false
+          }
+        },
+        "learning_applied": true,
+        "similar_incidents_count": 0,
+        "historical_context": {
+          "message": "Synced from real incidents"
+        }
+      },
+      "resolution_data": {
+        "resolved_by_ai": true,
+        "ai_processing_time": 2.0,
+        "ai_resources_used": 1.5,
+        "ai_accuracy": 0.595,
+        "resolution_status": "resolved"
+      }
+    },
+    {
+      "incident_id": "INC-20260131064436",
+      "incident_type": "safety",
+      "severity": "medium",
+      "original_report": "Student reported feeling unsafe due to poor lighting in the library parking area. This is a legitimate safety concern that needs attention.",
+      "stages": {
+        "evaluator": {
+          "confidence_index": {
+            "overall_confidence": 63.9,
+            "confidence_level": "medium",
+            "resolution_recommendation": "autonomous",
+            "factor_scores": {
+              "prompt_quality": 53.0,
+              "image_authenticity": 60.0,
+              "description_completeness": 50.0,
+              "incident_complexity": 100.0,
+              "historical_success": 80.0
+            },
+            "confidence_reasoning": [
+              "Medium confidence: Most factors are reliable with some areas of concern",
+              "Strong incident complexity: 100.0% - Excellent quality",
+              "Strong historical success: 80.0% - Excellent quality"
+            ],
+            "intervention_triggers": [],
+            "threshold_analysis": {
+              "autonomous_threshold": 55.0,
+              "human_intervention_threshold": 35.0,
+              "current_score": 63.9,
+              "can_resolve_autonomously": true,
+              "requires_human_intervention": false
+            }
+          }
+        }
+      },
+      "rl_metadata": {
+        "added_at": "2026-01-31T06:44:36.421692",
+        "incident_number": 6,
+        "processing_time": 2.0,
+        "resources_used": 1.5,
+        "confidence_analysis": {
+          "overall_confidence": 63.9,
+          "confidence_level": "medium",
+          "resolution_recommendation": "autonomous",
+          "factor_scores": {
+            "prompt_quality": 53.0,
+            "image_authenticity": 60.0,
+            "description_completeness": 50.0,
+            "incident_complexity": 100.0,
+            "historical_success": 80.0
+          },
+          "confidence_reasoning": [
+            "Medium confidence: Most factors are reliable with some areas of concern",
+            "Strong incident complexity: 100.0% - Excellent quality",
+            "Strong historical success: 80.0% - Excellent quality"
+          ],
+          "intervention_triggers": [],
+          "threshold_analysis": {
+            "autonomous_threshold": 55.0,
+            "human_intervention_threshold": 35.0,
+            "current_score": 63.9,
+            "can_resolve_autonomously": true,
+            "requires_human_intervention": false
+          }
+        },
+        "learning_applied": true,
+        "similar_incidents_count": 0,
+        "historical_context": {
+          "message": "Synced from real incidents"
+        }
+      },
+      "resolution_data": {
+        "resolved_by_ai": true,
+        "ai_processing_time": 2.0,
+        "ai_resources_used": 1.5,
+        "ai_accuracy": 0.639,
+        "resolution_status": "resolved"
+      }
+    },
+    {
+      "incident_id": "HUMAN-20260131065724-001",
+      "incident_type": "legal",
+      "severity": "high",
+      "original_report": "Complex legal matter requiring expert human judgment and institutional policy review.",
+      "stages": {
+        "evaluator": {
+          "confidence_index": {
+            "overall_confidence": 25.0,
+            "confidence_level": "low",
+            "resolution_recommendation": "human_required"
+          }
+        }
+      },
+      "resolution_data": {
+        "resolved_by_human": true,
+        "human_processing_time": 2914.715266020957,
+        "human_resources_used": 9.326391157030002,
+        "human_accuracy": 0.9417295426237917,
+        "human_review_date": "2026-01-31T06:57:24.302651",
+        "human_decision": "escalated_to_administration",
+        "human_notes": "Complex case requiring administrative review and legal consultation.",
+        "resolution_status": "resolved_by_human"
+      },
+      "rl_metadata": {
+        "added_at": "2026-01-31T06:57:24.302657",
+        "incident_number": 7,
+        "processing_time": 0,
+        "resources_used": 0,
+        "confidence_analysis": {
+          "overall_confidence": 25.0,
+          "resolution_recommendation": "human_required"
+        },
+        "learning_applied": true,
+        "similar_incidents_count": 0,
+        "historical_context": {
+          "message": "Complex human-only incident"
+        }
+      }
+    },
+    {
+      "incident_id": "HUMAN-20260131065724-002",
+      "incident_type": "crisis",
+      "severity": "critical",
+      "original_report": "Emergency situation requiring immediate human intervention and crisis management protocols.",
+      "stages": {
+        "evaluator": {
+          "confidence_index": {
+            "overall_confidence": 15.0,
+            "confidence_level": "very_low",
+            "resolution_recommendation": "human_required"
+          }
+        }
+      },
+      "resolution_data": {
+        "resolved_by_human": true,
+        "human_processing_time": 1121.0483790231588,
+        "human_resources_used": 14.735141703719954,
+        "human_accuracy": 0.9589940327884174,
+        "human_review_date": "2026-01-31T06:57:24.302699",
+        "human_decision": "emergency_protocols_activated",
+        "human_notes": "Emergency response protocols activated. Multiple departments coordinated.",
+        "resolution_status": "resolved_by_human"
+      },
+      "rl_metadata": {
+        "added_at": "2026-01-31T06:57:24.302701",
+        "incident_number": 8,
+        "processing_time": 0,
+        "resources_used": 0,
+        "confidence_analysis": {
+          "overall_confidence": 15.0,
+          "resolution_recommendation": "human_required"
+        },
+        "learning_applied": true,
+        "similar_incidents_count": 0,
+        "historical_context": {
+          "message": "Critical human-only incident"
+        }
+      }
+    }
+  ],
+  "spam_patterns": [
+    {
+      "pattern_id": "SPAM-20260131052217-7b5f797a",
+      "text_hash": "7b5f797a16595ab78e5e935d0a77cb77",
+      "similarity_threshold": 0.85,
+      "keywords": [
+        "free",
+        "money",
+        "click",
+        "here",
+        "now!!!"
+      ],
+      "marked_spam_count": 3,
+      "false_positive_count": 0,
+      "confidence": 1.0,
+      "created_at": "2026-01-31T05:22:17.026376",
+      "last_seen": "2026-01-31T05:22:53.154447",
+      "reason": "Test spam pattern",
+      "original_text": "FREE MONEY CLICK HERE NOW!!!"
+    },
+    {
+      "pattern_id": "SPAM-20260131052220-fb59527f",
+      "text_hash": "fb59527fc42dd96b049f3ab8e34c577f",
+      "similarity_threshold": 0.85,
+      "keywords": [
+        "legitimate",
+        "incident",
+        "report",
+        "flagged"
+      ],
+      "marked_spam_count": 1,
+      "false_positive_count": 1,
+      "confidence": 0.6000000000000001,
+      "created_at": "2026-01-31T05:22:20.894356",
+      "last_seen": "2026-01-31T05:22:20.894359",
+      "reason": "Test false positive",
+      "original_text": "This is a legitimate incident report that might be flagged"
+    },
+    {
+      "pattern_id": "SPAM-20260131052220-1bf6dd65",
+      "text_hash": "1bf6dd657cfdf0b6a620aa949463d576",
+      "similarity_threshold": 0.85,
+      "keywords": [
+        "urgent",
+        "click",
+        "here",
+        "free",
+        "stuff",
+        "now!!!"
+      ],
+      "marked_spam_count": 1,
+      "false_positive_count": 0,
+      "confidence": 0.8,
+      "created_at": "2026-01-31T05:22:20.896248",
+      "last_seen": "2026-01-31T05:22:20.896252",
+      "reason": "Server integration test",
+      "original_text": "URGENT CLICK HERE FOR FREE STUFF NOW!!!"
+    },
+    {
+      "pattern_id": "SPAM-20260131052253-7b5f797a",
+      "text_hash": "7b5f797a16595ab78e5e935d0a77cb77",
+      "similarity_threshold": 0.85,
+      "keywords": [
+        "free",
+        "money",
+        "click",
+        "here",
+        "now!!!"
+      ],
+      "marked_spam_count": 1,
+      "false_positive_count": 0,
+      "confidence": 0.8,
+      "created_at": "2026-01-31T05:22:53.153158",
+      "last_seen": "2026-01-31T05:22:53.153165",
+      "reason": "Test spam pattern",
+      "original_text": "FREE MONEY CLICK HERE NOW!!!"
+    },
+    {
+      "pattern_id": "SPAM-20260131052257-fb59527f",
+      "text_hash": "fb59527fc42dd96b049f3ab8e34c577f",
+      "similarity_threshold": 0.85,
+      "keywords": [
+        "legitimate",
+        "incident",
+        "report",
+        "flagged"
+      ],
+      "marked_spam_count": 1,
+      "false_positive_count": 1,
+      "confidence": 0.6000000000000001,
+      "created_at": "2026-01-31T05:22:57.018623",
+      "last_seen": "2026-01-31T05:22:57.018626",
+      "reason": "Test false positive",
+      "original_text": "This is a legitimate incident report that might be flagged"
+    },
+    {
+      "pattern_id": "SPAM-20260131052257-1bf6dd65",
+      "text_hash": "1bf6dd657cfdf0b6a620aa949463d576",
+      "similarity_threshold": 0.85,
+      "keywords": [
+        "urgent",
+        "click",
+        "here",
+        "free",
+        "stuff",
+        "now!!!"
+      ],
+      "marked_spam_count": 1,
+      "false_positive_count": 0,
+      "confidence": 0.8,
+      "created_at": "2026-01-31T05:22:57.021629",
+      "last_seen": "2026-01-31T05:22:57.021632",
+      "reason": "Server integration test",
+      "original_text": "URGENT CLICK HERE FOR FREE STUFF NOW!!!"
+    },
+    {
+      "pattern_id": "SPAM-20260131053723-0302ceb8",
+      "text_hash": "0302ceb883d15582abf967768098f409",
+      "similarity_threshold": 0.85,
+      "keywords": [
+        "random",
+        "gibberish",
+        "text",
+        "testing"
+      ],
+      "marked_spam_count": 3,
+      "false_positive_count": 0,
+      "confidence": 0.9,
+      "created_at": "2026-01-31T05:37:23.159478",
+      "last_seen": "2026-01-31T06:57:10.439379",
+      "reason": "Test gibberish detection",
+      "pattern_type": "gibberish",
+      "is_gibberish": true,
+      "human_assessment": "Test human confirmation",
+      "original_text": "random gibberish text for testing"
+    },
+    {
+      "pattern_id": "SPAM-20260131053843-0302ceb8",
+      "text_hash": "0302ceb883d15582abf967768098f409",
+      "similarity_threshold": 0.85,
+      "keywords": [
+        "random",
+        "gibberish",
+        "text",
+        "testing"
+      ],
+      "marked_spam_count": 2,
+      "false_positive_count": 1,
+      "confidence": 0.8,
+      "created_at": "2026-01-31T05:38:43.600083",
+      "last_seen": "2026-01-31T06:57:10.439464",
+      "reason": "Test gibberish detection",
+      "pattern_type": "gibberish",
+      "is_gibberish": true,
+      "human_assessment": "Test human confirmation",
+      "original_text": "random gibberish text for testing"
+    },
+    {
+      "pattern_id": "SPAM-20260131054027-bf214ac3",
+      "text_hash": "bf214ac3c9bc1690ebf4ae6585ecdb08",
+      "similarity_threshold": 0.85,
+      "keywords": [
+        "random",
+        "keyboard",
+        "mashing",
+        "text",
+        "asdfghjkl"
+      ],
+      "marked_spam_count": 1,
+      "false_positive_count": 0,
+      "confidence": 0.9,
+      "created_at": "2026-01-31T05:40:27.025498",
+      "last_seen": "2026-01-31T05:40:27.025501",
+      "reason": "Human confirmed gibberish",
+      "pattern_type": "gibberish",
+      "is_gibberish": true,
+      "human_assessment": "Admin confirmed this is nonsensical text",
+      "original_text": "random keyboard mashing text asdfghjkl"
+    },
+    {
+      "pattern_id": "SPAM-20260131062629-68446b07",
+      "text_hash": "68446b07899cd2cd8b54b92fbe9f9ef3",
+      "similarity_threshold": 0.85,
+      "keywords": [
+        "witnessed",
+        "harassment",
+        "library",
+        "yesterday",
+        "evening.",
+        "student",
+        "being",
+        "verbally",
+        "abused",
+        "another"
+      ],
+      "marked_spam_count": 1,
+      "false_positive_count": 0,
+      "confidence": 0.85,
+      "created_at": "2026-01-31T06:26:29.064224",
+      "last_seen": "2026-01-31T06:26:29.064230",
+      "reason": "Manual admin review",
+      "pattern_type": "human_verified",
+      "is_gibberish": false,
+      "human_assessment": "Human marked as spam",
+      "original_text": "I witnessed harassment in the library yesterday evening. A student was being verbally abused by another student near the study area."
+    },
+    {
+      "pattern_id": "SPAM-20260131065710-34f24640",
+      "text_hash": "34f246405c81645f73dc2ab56157c7e3",
+      "similarity_threshold": 0.85,
+      "keywords": [
+        "urgent!!!",
+        "account",
+        "suspended!",
+        "click",
+        "immediately",
+        "information!"
+      ],
+      "marked_spam_count": 2,
+      "false_positive_count": 1,
+      "confidence": 0.95,
+      "created_at": "2026-01-31T06:57:10.438352",
+      "last_seen": "2026-01-31T06:57:10.439555",
+      "reason": "Phishing attempt with urgency tactics",
+      "pattern_type": "phishing",
+      "is_gibberish": false,
+      "human_assessment": "Confirmed phishing pattern",
+      "original_text": "URGENT!!! Your account will be suspended! Click here immediately to verify your information!"
+    },
+    {
+      "pattern_id": "SPAM-20260131065710-0724f441",
+      "text_hash": "0724f44163e42590149c161d5fe49aad",
+      "similarity_threshold": 0.85,
+      "keywords": [
+        "congratulations!",
+        "$10,000!",
+        "prize",
+        "providing",
+        "details!"
+      ],
+      "marked_spam_count": 5,
+      "false_positive_count": 0,
+      "confidence": 0.98,
+      "created_at": "2026-01-31T06:57:10.438466",
+      "last_seen": "2026-01-31T06:57:10.439617",
+      "reason": "Prize scam with financial information request",
+      "pattern_type": "financial_scam",
+      "is_gibberish": false,
+      "human_assessment": "Confirmed financial_scam pattern",
+      "original_text": "Congratulations! You've won $10,000! Claim your prize now by providing your bank details!"
+    },
+    {
+      "pattern_id": "SPAM-20260131065710-83a739ac",
+      "text_hash": "83a739acf9095d36d6b57bd62e20cdfd",
+      "similarity_threshold": 0.85,
+      "keywords": [
+        "money",
+        "experience",
+        "needed!"
+      ],
+      "marked_spam_count": 1,
+      "false_positive_count": 0,
+      "confidence": 0.92,
+      "created_at": "2026-01-31T06:57:10.438604",
+      "last_seen": "2026-01-31T06:57:10.438613",
+      "reason": "Work-from-home scam with unrealistic earnings",
+      "pattern_type": "employment_scam",
+      "is_gibberish": false,
+      "human_assessment": "Confirmed employment_scam pattern",
+      "original_text": "Make money fast! Work from home! Earn $5000 per week! No experience needed!"
+    },
+    {
+      "pattern_id": "SPAM-20260131065710-67733fa9",
+      "text_hash": "67733fa94fe337fcee610146aa8f5abd",
+      "similarity_threshold": 0.85,
+      "keywords": [
+        "zxcvbnm",
+        "asdfghjkl",
+        "qwertyuiop",
+        "keyboard"
+      ],
+      "marked_spam_count": 2,
+      "false_positive_count": 0,
+      "confidence": 0.88,
+      "created_at": "2026-01-31T06:57:10.438763",
+      "last_seen": "2026-01-31T06:57:10.438767",
+      "reason": "Random keyboard mashing detected",
+      "pattern_type": "gibberish",
+      "is_gibberish": true,
+      "human_assessment": "Confirmed gibberish pattern",
+      "original_text": "zxcvbnm asdfghjkl qwertyuiop random keyboard spam text"
+    },
+    {
+      "pattern_id": "SPAM-20260131065710-89fd7cdb",
+      "text_hash": "89fd7cdb6d69f97cb548e8309c477f1d",
+      "similarity_threshold": 0.85,
+      "keywords": [
+        "cheap",
+        "medications",
+        "online!",
+        "prescription",
+        "needed!",
+        "discount",
+        "pharmacy!"
+      ],
+      "marked_spam_count": 2,
+      "false_positive_count": 0,
+      "confidence": 0.94,
+      "created_at": "2026-01-31T06:57:10.438909",
+      "last_seen": "2026-01-31T06:57:10.438914",
+      "reason": "Illegal pharmaceutical sales",
+      "pattern_type": "pharmaceutical_spam",
+      "is_gibberish": false,
+      "human_assessment": "Confirmed pharmaceutical_spam pattern",
+      "original_text": "Buy cheap medications online! No prescription needed! Discount pharmacy!"
+    },
+    {
+      "pattern_id": "SPAM-20260131065710-1aecbd5c",
+      "text_hash": "1aecbd5cd61766681f1771fb02d674cb",
+      "similarity_threshold": 0.85,
+      "keywords": [
+        "hot",
+        "singles",
+        "tonight!",
+        "click",
+        "instant",
+        "access!"
+      ],
+      "marked_spam_count": 4,
+      "false_positive_count": 0,
+      "confidence": 0.96,
+      "created_at": "2026-01-31T06:57:10.439133",
+      "last_seen": "2026-01-31T06:57:10.439136",
+      "reason": "Adult content spam",
+      "pattern_type": "adult_spam",
+      "is_gibberish": false,
+      "human_assessment": "Confirmed adult_spam pattern",
+      "original_text": "Hot singles in your area! Meet them tonight! Click here for instant access!"
+    },
+    {
+      "pattern_id": "SPAM-20260131074646-6e357fa1",
+      "text_hash": "6e357fa11071dd6d65d4b72e018aeb42",
+      "similarity_threshold": 0.85,
+      "keywords": [
+        "test",
+        "incident",
+        "resolution",
+        "workflow",
+        "student",
+        "reported",
+        "very",
+        "long",
+        "incident",
+        "description"
+      ],
+      "marked_spam_count": 1,
+      "false_positive_count": 0,
+      "confidence": 0.85,
+      "created_at": "2026-01-31T07:46:46.496245",
+      "last_seen": "2026-01-31T07:46:46.496250",
+      "reason": "Manual admin review",
+      "pattern_type": "human_verified",
+      "is_gibberish": false,
+      "human_assessment": "Human marked as spam",
+      "original_text": "Test incident for resolution workflow - A student reported a very long incident description that could potentially overflow the container if not properly handled with text truncation and responsive de..."
+    },
+    {
+      "pattern_id": "SPAM-20260131091356-20b915d6",
+      "text_hash": "20b915d6557d352465fda55d98616144",
+      "similarity_threshold": 0.85,
+      "keywords": [
+        "incident",
+        "report:",
+        "reporter:",
+        "aniket",
+        "(stu-568584)",
+        "role:",
+        "student",
+        "incident",
+        "type:",
+        "assault"
+      ],
+      "marked_spam_count": 1,
+      "false_positive_count": 0,
+      "confidence": 0.9,
+      "created_at": "2026-01-31T09:13:56.237353",
+      "last_seen": "2026-01-31T09:13:56.237366",
+      "reason": "Gibberish/nonsensical text",
+      "pattern_type": "gibberish",
+      "is_gibberish": true,
+      "human_assessment": "Human confirmed gibberish text",
+      "original_text": "Incident Report:\n        \nReporter: aniket (stu-568584)\nRole: student\nIncident Type: assault\nSeverity: medium\nLocation: academic block 12\nIncident Date/Time: January 31st, 2026\nReport Submitted: 31/1/..."
+    },
+    {
+      "pattern_id": "SPAM-20260426004254-20b915d6",
+      "text_hash": "20b915d6557d352465fda55d98616144",
+      "similarity_threshold": 0.85,
+      "keywords": [
+        "incident",
+        "report:",
+        "reporter:",
+        "aniket",
+        "(stu-568584)",
+        "role:",
+        "student",
+        "incident",
+        "type:",
+        "assault"
+      ],
+      "marked_spam_count": 1,
+      "false_positive_count": 0,
+      "confidence": 0.85,
+      "created_at": "2026-04-26T00:42:54.849954",
+      "last_seen": "2026-04-26T00:42:54.849954",
+      "reason": "Manual admin review",
+      "pattern_type": "human_verified",
+      "is_gibberish": false,
+      "human_assessment": "Human marked as spam",
+      "original_text": "Incident Report:\n        \nReporter: aniket (stu-568584)\nRole: student\nIncident Type: assault\nSeverity: medium\nLocation: academic block 12\nIncident Date/Time: January 31st, 2026\nReport Submitted: 31/1/..."
+    },
+    {
+      "pattern_id": "SPAM-20260426004255-51737148",
+      "text_hash": "51737148819727a25afd213c8f7c4423",
+      "similarity_threshold": 0.85,
+      "keywords": [
+        "incident",
+        "report:",
+        "reporter:",
+        "anonymous",
+        "(pseudonymous",
+        "generated)",
+        "role:",
+        "student",
+        "incident",
+        "type:"
+      ],
+      "marked_spam_count": 1,
+      "false_positive_count": 0,
+      "confidence": 0.85,
+      "created_at": "2026-04-26T00:42:55.467428",
+      "last_seen": "2026-04-26T00:42:55.467428",
+      "reason": "Manual admin review",
+      "pattern_type": "human_verified",
+      "is_gibberish": false,
+      "human_assessment": "Human marked as spam",
+      "original_text": "Incident Report:\n        \nReporter: Anonymous (Pseudonymous ID will be generated)\nRole: student\nIncident Type: assault\nSeverity: critical\nLocation: lab \nIncident Date/Time: Not specified\nReport Submit..."
+    },
+    {
+      "pattern_id": "SPAM-20260426004255-25014570",
+      "text_hash": "2501457082c7958b95a999aba37aed0f",
+      "similarity_threshold": 0.85,
+      "keywords": [
+        "fresh",
+        "test",
+        "incident",
+        "resolution",
+        "testing"
+      ],
+      "marked_spam_count": 1,
+      "false_positive_count": 0,
+      "confidence": 0.85,
+      "created_at": "2026-04-26T00:42:55.659986",
+      "last_seen": "2026-04-26T00:42:55.659986",
+      "reason": "Manual admin review",
+      "pattern_type": "human_verified",
+      "is_gibberish": false,
+      "human_assessment": "Human marked as spam",
+      "original_text": "Fresh test incident for resolution testing"
+    },
+    {
+      "pattern_id": "SPAM-20260426004255-25014570",
+      "text_hash": "2501457082c7958b95a999aba37aed0f",
+      "similarity_threshold": 0.85,
+      "keywords": [
+        "fresh",
+        "test",
+        "incident",
+        "resolution",
+        "testing"
+      ],
+      "marked_spam_count": 1,
+      "false_positive_count": 0,
+      "confidence": 0.85,
+      "created_at": "2026-04-26T00:42:55.821034",
+      "last_seen": "2026-04-26T00:42:55.821034",
+      "reason": "Manual admin review",
+      "pattern_type": "human_verified",
+      "is_gibberish": false,
+      "human_assessment": "Human marked as spam",
+      "original_text": "Fresh test incident for resolution testing"
+    },
+    {
+      "pattern_id": "SPAM-20260426004256-6e357fa1",
+      "text_hash": "6e357fa11071dd6d65d4b72e018aeb42",
+      "similarity_threshold": 0.85,
+      "keywords": [
+        "test",
+        "incident",
+        "resolution",
+        "workflow",
+        "student",
+        "reported",
+        "very",
+        "long",
+        "incident",
+        "description"
+      ],
+      "marked_spam_count": 1,
+      "false_positive_count": 0,
+      "confidence": 0.85,
+      "created_at": "2026-04-26T00:42:56.077375",
+      "last_seen": "2026-04-26T00:42:56.077375",
+      "reason": "Manual admin review",
+      "pattern_type": "human_verified",
+      "is_gibberish": false,
+      "human_assessment": "Human marked as spam",
+      "original_text": "Test incident for resolution workflow - A student reported a very long incident description that could potentially overflow the container if not properly handled with text truncation and responsive de..."
+    },
+    {
+      "pattern_id": "SPAM-20260426004256-e21415de",
+      "text_hash": "e21415de0106465a90875309785723fd",
+      "similarity_threshold": 0.85,
+      "keywords": [
+        "incident",
+        "report:",
+        "reporter:",
+        "anonymous",
+        "(pseudonymous",
+        "generated)",
+        "role:",
+        "student",
+        "incident",
+        "type:"
+      ],
+      "marked_spam_count": 1,
+      "false_positive_count": 0,
+      "confidence": 0.85,
+      "created_at": "2026-04-26T00:42:56.259763",
+      "last_seen": "2026-04-26T00:42:56.259763",
+      "reason": "Manual admin review",
+      "pattern_type": "human_verified",
+      "is_gibberish": false,
+      "human_assessment": "Human marked as spam",
+      "original_text": "Incident Report:\n        \nReporter: Anonymous (Pseudonymous ID will be generated)\nRole: student\nIncident Type: assault\nSeverity: high\nLocation: Library\nIncident Date/Time: January 31st, 2026\nReport Su..."
+    },
+    {
+      "pattern_id": "SPAM-20260426004256-9d43a49b",
+      "text_hash": "9d43a49b1e7eeaab0df2a7856d17eb36",
+      "similarity_threshold": 0.85,
+      "keywords": [
+        "incident",
+        "report:",
+        "reporter:",
+        "kshitij",
+        "(stu-568584)",
+        "role:",
+        "student",
+        "incident",
+        "type:",
+        "assault"
+      ],
+      "marked_spam_count": 1,
+      "false_positive_count": 0,
+      "confidence": 0.85,
+      "created_at": "2026-04-26T00:42:56.379533",
+      "last_seen": "2026-04-26T00:42:56.379533",
+      "reason": "Manual admin review",
+      "pattern_type": "human_verified",
+      "is_gibberish": false,
+      "human_assessment": "Human marked as spam",
+      "original_text": "Incident Report:\n        \nReporter: kshitij (stu-568584)\nRole: student\nIncident Type: assault\nSeverity: high\nLocation: hostel\nIncident Date/Time: January 31st, 2026\nReport Submitted: 31/1/2026, 7:25:1..."
+    }
+  ],
+  "performance_metrics": [],
+  "learning_stats": {
+    "total_incidents": 8,
+    "spam_detected": 40,
+    "false_positives": 4,
+    "ai_vs_human_comparisons": 8,
+    "system_accuracy": 0.0,
+    "last_updated": "2026-04-26T00:42:56.379533",
+    "gibberish_detected": 5
+  },
+  "confidence_improvements": {},
+  "decision_rewards": {
+    "test_low": {
+      "total_incidents": 2,
+      "successful_resolutions": 0,
+      "average_confidence": 0.0,
+      "preferred_resolution": "supervised"
+    }
+  }
+}

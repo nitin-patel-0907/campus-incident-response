@@ -1,0 +1,741 @@
+[
+  {
+    "incident_id": "INC-20260825183751",
+    "workflow_id": "INC-20260825183751",
+    "created_at": "2026-08-25T18:37:51.614502",
+    "updated_at": "2026-08-25T18:37:52.123837",
+    "status": "success",
+    "execution_mode": "simulate",
+    "original_report": "A laptop was stolen from the library study room on Monday afternoon.",
+    "incident_data": {
+      "incident_type": "theft",
+      "severity": "low",
+      "location": "Main Library"
+    },
+    "original_metadata": {
+      "incident_type": "theft",
+      "severity": "low",
+      "location": "Main Library"
+    },
+    "response_plan": {
+      "status": "success",
+      "timestamp": "2026-08-25T18:37:51.615508",
+      "agent": "Planner Agent",
+      "action_plan": {
+        "incident_id": "",
+        "priority_level": "medium",
+        "immediate_actions": [
+          {
+            "action": "Report to campus security immediately",
+            "responsible": "Campus Security",
+            "deadline": "2026-08-25 22:37",
+            "priority": "medium",
+            "status": "pending"
+          },
+          {
+            "action": "Preserve evidence and secure the scene",
+            "responsible": "Student Affairs",
+            "deadline": "2026-08-26 00:37",
+            "priority": "medium",
+            "status": "pending"
+          },
+          {
+            "action": "Document all missing items and their value",
+            "responsible": "Student Affairs",
+            "deadline": "2026-08-26 02:37",
+            "priority": "medium",
+            "status": "pending"
+          },
+          {
+            "action": "Review security footage if available",
+            "responsible": "Campus Security",
+            "deadline": "2026-08-26 04:37",
+            "priority": "medium",
+            "status": "pending"
+          }
+        ],
+        "short_term_actions": [
+          {
+            "action": "File police report if value exceeds threshold",
+            "responsible": "Student Affairs",
+            "deadline": "2026-08-26",
+            "priority": "medium",
+            "status": "pending"
+          },
+          {
+            "action": "Conduct investigation with security team",
+            "responsible": "Campus Security",
+            "deadline": "2026-08-28",
+            "priority": "medium",
+            "status": "pending"
+          },
+          {
+            "action": "Notify insurance if applicable",
+            "responsible": "Student Affairs Dean",
+            "deadline": "2026-08-30",
+            "priority": "medium",
+            "status": "pending"
+          },
+          {
+            "action": "Increase security presence in affected area",
+            "responsible": "Campus Security",
+            "deadline": "2026-09-01",
+            "priority": "medium",
+            "status": "pending"
+          }
+        ],
+        "long_term_actions": [
+          {
+            "action": "Review and improve security measures",
+            "responsible": "Campus Security",
+            "deadline": "2026-09-01",
+            "priority": "low",
+            "status": "pending"
+          },
+          {
+            "action": "Provide crime prevention education",
+            "responsible": "Student Affairs",
+            "deadline": "2026-09-15",
+            "priority": "low",
+            "status": "pending"
+          },
+          {
+            "action": "Monitor for patterns or repeat incidents",
+            "responsible": "Student Affairs",
+            "deadline": "2026-09-29",
+            "priority": "low",
+            "status": "pending"
+          },
+          {
+            "action": "Update security protocols as needed",
+            "responsible": "Campus Security",
+            "deadline": "2026-10-13",
+            "priority": "low",
+            "status": "pending"
+          }
+        ],
+        "stakeholders": [
+          {
+            "role": "Campus Security",
+            "notification_priority": "immediate",
+            "involvement": "primary"
+          },
+          {
+            "role": "Facilities Management",
+            "notification_priority": "within_4_hours",
+            "involvement": "secondary"
+          },
+          {
+            "role": "Risk Management",
+            "notification_priority": "within_24_hours",
+            "involvement": "advisory"
+          }
+        ],
+        "resources_needed": [
+          {
+            "resource": "Incident documentation system",
+            "type": "technology",
+            "availability": "immediate"
+          },
+          {
+            "resource": "Administrative support",
+            "type": "personnel",
+            "availability": "immediate"
+          },
+          {
+            "resource": "Security personnel",
+            "type": "personnel",
+            "availability": "immediate"
+          },
+          {
+            "resource": "Security footage review",
+            "type": "investigation",
+            "availability": "within_4_hours"
+          }
+        ],
+        "communication_plan": {
+          "internal_notifications": [
+            {
+              "recipient": "Campus Security",
+              "method": "email",
+              "timeline": "immediate",
+              "message_type": "incident_alert"
+            },
+            {
+              "recipient": "Facilities Management",
+              "method": "email",
+              "timeline": "within_4_hours",
+              "message_type": "incident_alert"
+            },
+            {
+              "recipient": "Risk Management",
+              "method": "email",
+              "timeline": "within_24_hours",
+              "message_type": "incident_alert"
+            }
+          ],
+          "external_notifications": [],
+          "updates_schedule": {
+            "frequency": "weekly",
+            "method": "email",
+            "recipients": "relevant stakeholders"
+          },
+          "communication_lead": "Student Affairs Dean"
+        },
+        "success_criteria": [
+          "All immediate safety concerns addressed",
+          "Incident properly documented and reported",
+          "Appropriate stakeholders notified within required timeframes",
+          "Support services provided to affected parties"
+        ],
+        "contingency_plans": [
+          {
+            "scenario": "Media attention",
+            "response": "Activate crisis communication protocol, designate single spokesperson",
+            "responsible": "Communications Office"
+          },
+          {
+            "scenario": "Legal action threatened",
+            "response": "Immediately involve legal counsel, preserve all documentation",
+            "responsible": "Legal Counsel"
+          },
+          {
+            "scenario": "Additional victims come forward",
+            "response": "Expand investigation scope, provide additional support resources",
+            "responsible": "Investigation Lead"
+          }
+        ]
+      },
+      "priority_level": "medium",
+      "estimated_duration": "Immediate: 8 hours, Short-term: 12 days, Long-term: 8 weeks",
+      "resource_requirements": {
+        "technology": 1,
+        "personnel": 2,
+        "investigation": 1
+      },
+      "planning_notes": [
+        "Timeline unclear - may affect investigation and evidence preservation",
+        "Limited information about involved parties - may require additional investigation",
+        "Plan created for theft incident",
+        "All deadlines are estimates and may need adjustment based on circumstances"
+      ]
+    },
+    "execution_summary": {
+      "execution_summary": {
+        "incident_id": "",
+        "priority": "medium",
+        "execution_mode": "simulate",
+        "start_time": "2026-08-25T18:37:51.615508",
+        "immediate_actions_executed": 4,
+        "resources_allocated": 4,
+        "notifications_sent": 3,
+        "overall_status": "simulated"
+      },
+      "task_status": {
+        "total_tasks": 12,
+        "completed": 4,
+        "pending": 8,
+        "completion_percentage": 33.33333333333333
+      },
+      "immediate_actions_results": [
+        {
+          "action": "Report to campus security immediately",
+          "responsible": "Campus Security",
+          "deadline": "2026-08-25 22:37",
+          "initiated_at": "2026-08-25T18:37:51.615508",
+          "status": "simulated",
+          "tracking_id": "TASK-20260825183751615508"
+        },
+        {
+          "action": "Preserve evidence and secure the scene",
+          "responsible": "Student Affairs",
+          "deadline": "2026-08-26 00:37",
+          "initiated_at": "2026-08-25T18:37:51.615508",
+          "status": "simulated",
+          "tracking_id": "TASK-20260825183751615508"
+        },
+        {
+          "action": "Document all missing items and their value",
+          "responsible": "Student Affairs",
+          "deadline": "2026-08-26 02:37",
+          "initiated_at": "2026-08-25T18:37:51.615508",
+          "status": "simulated",
+          "tracking_id": "TASK-20260825183751615508"
+        },
+        {
+          "action": "Review security footage if available",
+          "responsible": "Campus Security",
+          "deadline": "2026-08-26 04:37",
+          "initiated_at": "2026-08-25T18:37:51.615508",
+          "status": "simulated",
+          "tracking_id": "TASK-20260825183751615508"
+        }
+      ],
+      "notifications_sent": [
+        {
+          "recipient": "Campus Security",
+          "priority": "immediate",
+          "incident_id": "",
+          "sent_at": "2026-08-25T18:37:51.615508",
+          "status": "simulated",
+          "notification_id": "NOTIF-20260825183751615508"
+        },
+        {
+          "recipient": "Facilities Management",
+          "priority": "within_4_hours",
+          "incident_id": "",
+          "sent_at": "2026-08-25T18:37:51.615508",
+          "status": "simulated",
+          "notification_id": "NOTIF-20260825183751615508"
+        },
+        {
+          "recipient": "Risk Management",
+          "priority": "within_24_hours",
+          "incident_id": "",
+          "sent_at": "2026-08-25T18:37:51.615508",
+          "status": "simulated",
+          "notification_id": "NOTIF-20260825183751615508"
+        }
+      ],
+      "resources_allocated": [
+        {
+          "resource": "Incident documentation system",
+          "type": "technology",
+          "allocated_at": "2026-08-25T18:37:51.615508",
+          "status": "simulated",
+          "allocation_id": "RES-20260825183751615508"
+        },
+        {
+          "resource": "Administrative support",
+          "type": "personnel",
+          "allocated_at": "2026-08-25T18:37:51.615508",
+          "status": "simulated",
+          "allocation_id": "RES-20260825183751615508"
+        },
+        {
+          "resource": "Security personnel",
+          "type": "personnel",
+          "allocated_at": "2026-08-25T18:37:51.615508",
+          "status": "simulated",
+          "allocation_id": "RES-20260825183751615508"
+        },
+        {
+          "resource": "Security footage review",
+          "type": "investigation",
+          "allocated_at": "2026-08-25T18:37:51.615508",
+          "status": "simulated",
+          "allocation_id": "RES-20260825183751615508"
+        }
+      ],
+      "scheduled_actions": [
+        {
+          "action": "File police report if value exceeds threshold",
+          "responsible": "Student Affairs",
+          "deadline": "2026-08-26",
+          "phase": "short_term",
+          "scheduled_at": "2026-08-25T18:37:51.615508",
+          "status": "simulated",
+          "task_id": "SCHED-20260825183751615508"
+        },
+        {
+          "action": "Conduct investigation with security team",
+          "responsible": "Campus Security",
+          "deadline": "2026-08-28",
+          "phase": "short_term",
+          "scheduled_at": "2026-08-25T18:37:51.615508",
+          "status": "simulated",
+          "task_id": "SCHED-20260825183751615508"
+        },
+        {
+          "action": "Notify insurance if applicable",
+          "responsible": "Student Affairs Dean",
+          "deadline": "2026-08-30",
+          "phase": "short_term",
+          "scheduled_at": "2026-08-25T18:37:51.615508",
+          "status": "simulated",
+          "task_id": "SCHED-20260825183751615508"
+        },
+        {
+          "action": "Increase security presence in affected area",
+          "responsible": "Campus Security",
+          "deadline": "2026-09-01",
+          "phase": "short_term",
+          "scheduled_at": "2026-08-25T18:37:51.615508",
+          "status": "simulated",
+          "task_id": "SCHED-20260825183751615508"
+        },
+        {
+          "action": "Review and improve security measures",
+          "responsible": "Campus Security",
+          "deadline": "2026-09-01",
+          "phase": "long_term",
+          "scheduled_at": "2026-08-25T18:37:51.615508",
+          "status": "simulated",
+          "task_id": "SCHED-20260825183751615508"
+        },
+        {
+          "action": "Provide crime prevention education",
+          "responsible": "Student Affairs",
+          "deadline": "2026-09-15",
+          "phase": "long_term",
+          "scheduled_at": "2026-08-25T18:37:51.615508",
+          "status": "simulated",
+          "task_id": "SCHED-20260825183751615508"
+        },
+        {
+          "action": "Monitor for patterns or repeat incidents",
+          "responsible": "Student Affairs",
+          "deadline": "2026-09-29",
+          "phase": "long_term",
+          "scheduled_at": "2026-08-25T18:37:51.615508",
+          "status": "simulated",
+          "task_id": "SCHED-20260825183751615508"
+        },
+        {
+          "action": "Update security protocols as needed",
+          "responsible": "Campus Security",
+          "deadline": "2026-10-13",
+          "phase": "long_term",
+          "scheduled_at": "2026-08-25T18:37:51.615508",
+          "status": "simulated",
+          "task_id": "SCHED-20260825183751615508"
+        }
+      ],
+      "status": "success",
+      "execution_timestamp": "2026-08-25T18:37:51.615508"
+    },
+    "compliance_report": {
+      "validation_result": "blocked",
+      "policy_compliance": {
+        "overall_compliant": true,
+        "policy_checks": [
+          {
+            "policy": "Incident Reporting Policy",
+            "requirement": "Report within 24 hours",
+            "status": "compliant",
+            "severity": "medium"
+          },
+          {
+            "policy": "FERPA",
+            "requirement": "Protect student records",
+            "status": "compliant",
+            "severity": "high"
+          }
+        ]
+      },
+      "safety_checks": {
+        "all_checks_passed": false,
+        "checks": [
+          {
+            "check": "Immediate safety addressed",
+            "passed": false,
+            "priority": "critical"
+          },
+          {
+            "check": "Evidence preservation planned",
+            "passed": true,
+            "priority": "high"
+          },
+          {
+            "check": "Victim support services included",
+            "passed": false,
+            "priority": "high"
+          },
+          {
+            "check": "Notification chain followed",
+            "passed": true,
+            "priority": "high"
+          }
+        ]
+      },
+      "violations": [
+        {
+          "policy": "Property Protection Policy",
+          "violation_type": "Theft/unauthorized possession",
+          "severity": "high",
+          "action_required": "Security investigation"
+        }
+      ],
+      "recommendations": [
+        {
+          "recommendation": "Conduct comprehensive policy training for involved parties",
+          "priority": "medium",
+          "timeframe": "Within 30 days"
+        },
+        {
+          "recommendation": "Review and update safety protocols",
+          "priority": "high",
+          "timeframe": "Within 14 days"
+        },
+        {
+          "recommendation": "Provide counseling resources to affected individuals",
+          "priority": "high",
+          "timeframe": "Within 48 hours"
+        },
+        {
+          "recommendation": "Document all actions taken for audit trail",
+          "priority": "medium",
+          "timeframe": "Ongoing"
+        }
+      ],
+      "approved_actions": [
+        {
+          "action": "Report to campus security immediately",
+          "validation": "Standard action - approved"
+        },
+        {
+          "action": "Preserve evidence and secure the scene",
+          "validation": "Compliant with policies"
+        },
+        {
+          "action": "Document all missing items and their value",
+          "validation": "Compliant with policies"
+        },
+        {
+          "action": "Review security footage if available",
+          "validation": "Standard action - approved"
+        },
+        {
+          "action": "File police report if value exceeds threshold",
+          "validation": "Standard action - approved"
+        },
+        {
+          "action": "Conduct investigation with security team",
+          "validation": "Standard action - approved"
+        },
+        {
+          "action": "Notify insurance if applicable",
+          "validation": "Compliant with policies"
+        },
+        {
+          "action": "Increase security presence in affected area",
+          "validation": "Standard action - approved"
+        },
+        {
+          "action": "Review and improve security measures",
+          "validation": "Standard action - approved"
+        },
+        {
+          "action": "Provide crime prevention education",
+          "validation": "Standard action - approved"
+        },
+        {
+          "action": "Monitor for patterns or repeat incidents",
+          "validation": "Standard action - approved"
+        },
+        {
+          "action": "Update security protocols as needed",
+          "validation": "Standard action - approved"
+        }
+      ],
+      "blocked_actions": [],
+      "modified_actions": [],
+      "harmful_actions_detected": false,
+      "privacy_compliance": {
+        "FERPA_compliant": true,
+        "data_minimization": "Personal information limited to need-to-know basis",
+        "secure_storage": "Required",
+        "retention_policy": "Follow institutional data retention guidelines",
+        "disclosure_controls": "Information shared only with authorized personnel"
+      },
+      "overall_risk_level": "high",
+      "status": "success",
+      "validation_timestamp": "2026-08-25T18:37:51.615508"
+    },
+    "evaluation_report": {
+      "overall_score": 75.0,
+      "category_scores": {
+        "timeliness": 90.0,
+        "completeness": 100.0,
+        "policy_compliance": 45.0,
+        "resource_allocation": 95.0,
+        "communication": 100.0,
+        "safety_measures": 20.0
+      },
+      "strengths": [
+        {
+          "category": "timeliness",
+          "score": "90.0",
+          "description": "Response time meets or exceeds standards with prompt action initiation"
+        },
+        {
+          "category": "completeness",
+          "score": "100.0",
+          "description": "Comprehensive documentation and thorough action planning"
+        },
+        {
+          "category": "resource_allocation",
+          "score": "95.0",
+          "description": "Effective and appropriate allocation of resources"
+        },
+        {
+          "category": "communication",
+          "score": "100.0",
+          "description": "Clear and timely communication with all relevant stakeholders"
+        }
+      ],
+      "weaknesses": [
+        {
+          "category": "policy_compliance",
+          "score": "45.0",
+          "description": "Gaps in policy adherence; compliance issues identified",
+          "severity": "critical"
+        },
+        {
+          "category": "safety_measures",
+          "score": "20.0",
+          "description": "Safety protocols need strengthening",
+          "severity": "critical"
+        }
+      ],
+      "recommendations": [
+        {
+          "area": "policy_compliance",
+          "recommendation": "Provide regular policy training and compliance audits",
+          "priority": "high",
+          "expected_impact": "Significant improvement in response quality"
+        },
+        {
+          "area": "safety_measures",
+          "recommendation": "Review and update safety protocols; increase safety training",
+          "priority": "high",
+          "expected_impact": "Significant improvement in response quality"
+        }
+      ],
+      "compliance_assessment": {
+        "status": "blocked",
+        "violations_found": 1,
+        "critical_violations": 0,
+        "compliance_level": "partial",
+        "requires_action": true
+      },
+      "effectiveness_rating": "Good",
+      "response_quality": "Response to theft incident achieved 75.0% effectiveness rating of 'Good'. Met standard response requirements with adequate coordination and execution, though some areas need improvement. Given the low severity level of this theft incident, the response met expected standards for this incident type.",
+      "lessons_learned": [
+        {
+          "lesson": "Response protocol for theft incidents validated",
+          "application": "Use this response pattern for similar incidents"
+        },
+        {
+          "lesson": "Strong performance in timeliness, completeness, resource_allocation, communication",
+          "application": "Document and replicate these practices"
+        },
+        {
+          "lesson": "Improvement needed in policy_compliance, safety_measures",
+          "application": "Develop targeted training and process improvements"
+        },
+        {
+          "lesson": "Documented incident response enables continuous improvement",
+          "application": "Maintain comprehensive records for all incidents"
+        }
+      ],
+      "detailed_analysis": {
+        "incident_characteristics": {
+          "type": "theft",
+          "severity": "low",
+          "complexity": "Low"
+        },
+        "response_quality": {
+          "immediate_response": "Strong",
+          "documentation": "Complete",
+          "policy_adherence": "Non-compliant"
+        },
+        "resource_utilization": {
+          "personnel": 3,
+          "tools": 4,
+          "efficiency": "Optimal"
+        }
+      },
+      "improvement_plan": {
+        "immediate_actions": [
+          "Provide regular policy training and compliance audits",
+          "Review and update safety protocols; increase safety training"
+        ],
+        "short_term_actions": [],
+        "long_term_actions": [
+          "Establish continuous improvement program",
+          "Regular review of incident response effectiveness"
+        ],
+        "success_metrics": [
+          "Increase overall score to above 85",
+          "Reduce weaknesses to zero",
+          "Achieve full policy compliance"
+        ]
+      },
+      "evaluation_summary": "Overall incident response rated as 'Good' with a score of 75.0/100. Identified 4 area(s) of strength and 2 area(s) for improvement. Response meets institutional standards.",
+      "status": "success",
+      "evaluation_timestamp": "2026-08-25T18:37:52.120653",
+      "confidence_index": {
+        "overall_confidence": 60.5,
+        "confidence_level": "medium",
+        "resolution_recommendation": "supervised",
+        "factor_scores": {
+          "prompt_quality": 42.5,
+          "image_authenticity": 60.0,
+          "description_completeness": 55.0,
+          "incident_complexity": 85.0,
+          "historical_success": 90.0
+        },
+        "confidence_reasoning": [
+          "Medium confidence: Most factors are reliable with some areas of concern",
+          "Weak prompt quality: 42.5% - Requires attention",
+          "Strong incident complexity: 85.0% - Excellent quality",
+          "Strong historical success: 90.0% - Excellent quality"
+        ],
+        "intervention_triggers": [],
+        "threshold_analysis": {
+          "autonomous_threshold": 65.0,
+          "human_intervention_threshold": 45.0,
+          "current_score": 60.5,
+          "can_resolve_autonomously": false,
+          "requires_human_intervention": false
+        }
+      },
+      "resolution_decision": {
+        "resolution_status": "under_review",
+        "resolution_reason": "Medium confidence (60.5%) requires supervised resolution",
+        "human_intervention_required": true,
+        "resolution_details": "AI system can provide resolution recommendations but requires human oversight and approval before final resolution.",
+        "rule_applied": "supervised_resolution_medium_confidence",
+        "confidence_based_decision": true,
+        "decision_factors": {
+          "overall_confidence": 60.5,
+          "recommendation": "supervised",
+          "intervention_triggers": [],
+          "factor_scores": {
+            "prompt_quality": 42.5,
+            "image_authenticity": 60.0,
+            "description_completeness": 55.0,
+            "incident_complexity": 85.0,
+            "historical_success": 90.0
+          }
+        }
+      },
+      "resolution_status": "under_review",
+      "resolution_reason": "Medium confidence (60.5%) requires supervised resolution",
+      "human_intervention_required": true,
+      "resolution_details": "AI system can provide resolution recommendations but requires human oversight and approval before final resolution.",
+      "rule_applied": "supervised_resolution_medium_confidence"
+    },
+    "processing_stages": {
+      "intake": "completed",
+      "planning": "completed",
+      "safety": "completed",
+      "execution": "completed",
+      "evaluation": "completed"
+    },
+    "workflow_metadata": {
+      "workflow_id": null,
+      "created_at": "2026-08-25T18:37:51.614502",
+      "updated_at": "2026-08-25T18:37:52.123837",
+      "execution_mode": "simulate",
+      "stages_completed": [
+        "prompt",
+        "planner",
+        "safety",
+        "executor",
+        "evaluator"
+      ]
+    }
+  }
+]

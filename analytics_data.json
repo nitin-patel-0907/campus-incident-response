@@ -1,0 +1,445 @@
+{
+  "incidents": [
+    {
+      "incident_id": "INC-20260825182326",
+      "incident_type": "theft",
+      "severity": "low",
+      "location": "of the Main Library",
+      "anonymous": false,
+      "timestamp": "2026-08-25T18:23:26.114958",
+      "resolution_status": "unresolved"
+    },
+    {
+      "incident_id": "INC-20260825182326",
+      "incident_type": "theft",
+      "severity": "low",
+      "location": "of the Main Library",
+      "anonymous": false,
+      "timestamp": "2026-08-25T18:23:26.118866",
+      "resolution_status": "unresolved"
+    },
+    {
+      "incident_id": "INC-20260825182326",
+      "incident_type": "theft",
+      "severity": "low",
+      "location": "stolen from the library",
+      "anonymous": false,
+      "timestamp": "2026-08-25T18:23:26.142523",
+      "resolution_status": "unresolved"
+    },
+    {
+      "incident_id": "INC-20260825182326",
+      "incident_type": "harassment",
+      "severity": "low",
+      "location": "student in the dormitory",
+      "anonymous": false,
+      "timestamp": "2026-08-25T18:23:26.160929",
+      "resolution_status": "resolved"
+    },
+    {
+      "incident_id": "INC-20260825182326",
+      "incident_type": "medical",
+      "severity": "low",
+      "location": "Campus location not specified",
+      "anonymous": false,
+      "timestamp": "2026-08-25T18:23:26.179045",
+      "resolution_status": "resolved"
+    },
+    {
+      "incident_id": "INC-20260825182506",
+      "incident_type": "theft",
+      "severity": "low",
+      "location": "of the Main Library",
+      "anonymous": false,
+      "timestamp": "2026-08-25T18:25:06.133562",
+      "resolution_status": "unresolved"
+    },
+    {
+      "incident_id": "INC-20260825182606",
+      "incident_type": "theft",
+      "severity": "low",
+      "location": "of the Main Library",
+      "anonymous": false,
+      "timestamp": "2026-08-25T18:26:06.158652",
+      "resolution_status": "unresolved"
+    },
+    {
+      "incident_id": "INC-20260825182606",
+      "incident_type": "harassment",
+      "severity": "critical",
+      "location": "student in their dormitory",
+      "anonymous": false,
+      "timestamp": "2026-08-25T18:26:06.608758",
+      "resolution_status": "resolved"
+    },
+    {
+      "incident_id": "INC-20260825182612",
+      "incident_type": "theft",
+      "severity": "low",
+      "location": "of the Main Library",
+      "anonymous": false,
+      "timestamp": "2026-08-25T18:26:12.452250",
+      "resolution_status": "unresolved"
+    },
+    {
+      "incident_id": "INC-20260825182612",
+      "incident_type": "theft",
+      "severity": "low",
+      "location": "of the Main Library",
+      "anonymous": false,
+      "timestamp": "2026-08-25T18:26:12.459575",
+      "resolution_status": "unresolved"
+    },
+    {
+      "incident_id": "INC-20260825182612",
+      "incident_type": "theft",
+      "severity": "low",
+      "location": "stolen from the library",
+      "anonymous": false,
+      "timestamp": "2026-08-25T18:26:12.475401",
+      "resolution_status": "unresolved"
+    },
+    {
+      "incident_id": "INC-20260825182612",
+      "incident_type": "harassment",
+      "severity": "low",
+      "location": "student in the dormitory",
+      "anonymous": false,
+      "timestamp": "2026-08-25T18:26:12.489332",
+      "resolution_status": "resolved"
+    },
+    {
+      "incident_id": "INC-20260825182612",
+      "incident_type": "medical",
+      "severity": "low",
+      "location": "Campus location not specified",
+      "anonymous": false,
+      "timestamp": "2026-08-25T18:26:12.503008",
+      "resolution_status": "resolved"
+    },
+    {
+      "incident_id": "INC-20260825183751",
+      "incident_type": "theft",
+      "severity": "low",
+      "location": "stolen from the library study room on",
+      "anonymous": false,
+      "timestamp": "2026-08-25T18:37:51.614502",
+      "resolution_status": "unresolved"
+    },
+    {
+      "incident_id": "INC-20260825183802",
+      "incident_type": "theft",
+      "severity": "low",
+      "location": "of the Main Library",
+      "anonymous": false,
+      "timestamp": "2026-08-25T18:38:02.145047",
+      "resolution_status": "unresolved"
+    },
+    {
+      "incident_id": "INC-20260825183802",
+      "incident_type": "theft",
+      "severity": "low",
+      "location": "of the Main Library",
+      "anonymous": false,
+      "timestamp": "2026-08-25T18:38:02.149316",
+      "resolution_status": "unresolved"
+    },
+    {
+      "incident_id": "INC-20260825183802",
+      "incident_type": "theft",
+      "severity": "low",
+      "location": "stolen from the library",
+      "anonymous": false,
+      "timestamp": "2026-08-25T18:38:02.163380",
+      "resolution_status": "unresolved"
+    },
+    {
+      "incident_id": "INC-20260825183802",
+      "incident_type": "harassment",
+      "severity": "low",
+      "location": "student in the dormitory",
+      "anonymous": false,
+      "timestamp": "2026-08-25T18:38:02.171754",
+      "resolution_status": "resolved"
+    },
+    {
+      "incident_id": "INC-20260825183802",
+      "incident_type": "medical",
+      "severity": "low",
+      "location": "Campus location not specified",
+      "anonymous": false,
+      "timestamp": "2026-08-25T18:38:02.180688",
+      "resolution_status": "resolved"
+    }
+  ],
+  "evaluations": [
+    {
+      "incident_id": "INC-20260825182326",
+      "overall_score": 75.0,
+      "effectiveness_rating": "Good",
+      "category_scores": {
+        "timeliness": 90.0,
+        "completeness": 100.0,
+        "policy_compliance": 45.0,
+        "resource_allocation": 95.0,
+        "communication": 100.0,
+        "safety_measures": 20.0
+      },
+      "timestamp": "2026-08-25T18:23:26.116063"
+    },
+    {
+      "incident_id": "INC-20260825182326",
+      "overall_score": 75.0,
+      "effectiveness_rating": "Good",
+      "category_scores": {
+        "timeliness": 90.0,
+        "completeness": 100.0,
+        "policy_compliance": 45.0,
+        "resource_allocation": 95.0,
+        "communication": 100.0,
+        "safety_measures": 20.0
+      },
+      "timestamp": "2026-08-25T18:23:26.137957"
+    },
+    {
+      "incident_id": "INC-20260825182326",
+      "overall_score": 75.0,
+      "effectiveness_rating": "Good",
+      "category_scores": {
+        "timeliness": 90.0,
+        "completeness": 100.0,
+        "policy_compliance": 45.0,
+        "resource_allocation": 95.0,
+        "communication": 100.0,
+        "safety_measures": 20.0
+      },
+      "timestamp": "2026-08-25T18:23:26.159394"
+    },
+    {
+      "incident_id": "INC-20260825182326",
+      "overall_score": 97.08,
+      "effectiveness_rating": "Excellent",
+      "category_scores": {
+        "timeliness": 100.0,
+        "completeness": 100.0,
+        "policy_compliance": 82.5,
+        "resource_allocation": 100.0,
+        "communication": 100.0,
+        "safety_measures": 100.0
+      },
+      "timestamp": "2026-08-25T18:23:26.177453"
+    },
+    {
+      "incident_id": "INC-20260825182326",
+      "overall_score": 90.83,
+      "effectiveness_rating": "Excellent",
+      "category_scores": {
+        "timeliness": 100.0,
+        "completeness": 100.0,
+        "policy_compliance": 90.0,
+        "resource_allocation": 95.0,
+        "communication": 100.0,
+        "safety_measures": 60.0
+      },
+      "timestamp": "2026-08-25T18:23:26.202844"
+    },
+    {
+      "incident_id": "INC-20260825182506",
+      "overall_score": 75.0,
+      "effectiveness_rating": "Good",
+      "category_scores": {
+        "timeliness": 90.0,
+        "completeness": 100.0,
+        "policy_compliance": 45.0,
+        "resource_allocation": 95.0,
+        "communication": 100.0,
+        "safety_measures": 20.0
+      },
+      "timestamp": "2026-08-25T18:25:06.665157"
+    },
+    {
+      "incident_id": "INC-20260825182606",
+      "overall_score": 75.0,
+      "effectiveness_rating": "Good",
+      "category_scores": {
+        "timeliness": 90.0,
+        "completeness": 100.0,
+        "policy_compliance": 45.0,
+        "resource_allocation": 95.0,
+        "communication": 100.0,
+        "safety_measures": 20.0
+      },
+      "timestamp": "2026-08-25T18:26:06.607770"
+    },
+    {
+      "incident_id": "INC-20260825182606",
+      "overall_score": 97.08,
+      "effectiveness_rating": "Excellent",
+      "category_scores": {
+        "timeliness": 100.0,
+        "completeness": 100.0,
+        "policy_compliance": 82.5,
+        "resource_allocation": 100.0,
+        "communication": 100.0,
+        "safety_measures": 100.0
+      },
+      "timestamp": "2026-08-25T18:26:06.616777"
+    },
+    {
+      "incident_id": "INC-20260825182612",
+      "overall_score": 75.0,
+      "effectiveness_rating": "Good",
+      "category_scores": {
+        "timeliness": 90.0,
+        "completeness": 100.0,
+        "policy_compliance": 45.0,
+        "resource_allocation": 95.0,
+        "communication": 100.0,
+        "safety_measures": 20.0
+      },
+      "timestamp": "2026-08-25T18:26:12.453817"
+    },
+    {
+      "incident_id": "INC-20260825182612",
+      "overall_score": 75.0,
+      "effectiveness_rating": "Good",
+      "category_scores": {
+        "timeliness": 90.0,
+        "completeness": 100.0,
+        "policy_compliance": 45.0,
+        "resource_allocation": 95.0,
+        "communication": 100.0,
+        "safety_measures": 20.0
+      },
+      "timestamp": "2026-08-25T18:26:12.470661"
+    },
+    {
+      "incident_id": "INC-20260825182612",
+      "overall_score": 75.0,
+      "effectiveness_rating": "Good",
+      "category_scores": {
+        "timeliness": 90.0,
+        "completeness": 100.0,
+        "policy_compliance": 45.0,
+        "resource_allocation": 95.0,
+        "communication": 100.0,
+        "safety_measures": 20.0
+      },
+      "timestamp": "2026-08-25T18:26:12.488330"
+    },
+    {
+      "incident_id": "INC-20260825182612",
+      "overall_score": 97.08,
+      "effectiveness_rating": "Excellent",
+      "category_scores": {
+        "timeliness": 100.0,
+        "completeness": 100.0,
+        "policy_compliance": 82.5,
+        "resource_allocation": 100.0,
+        "communication": 100.0,
+        "safety_measures": 100.0
+      },
+      "timestamp": "2026-08-25T18:26:12.501988"
+    },
+    {
+      "incident_id": "INC-20260825182612",
+      "overall_score": 90.83,
+      "effectiveness_rating": "Excellent",
+      "category_scores": {
+        "timeliness": 100.0,
+        "completeness": 100.0,
+        "policy_compliance": 90.0,
+        "resource_allocation": 95.0,
+        "communication": 100.0,
+        "safety_measures": 60.0
+      },
+      "timestamp": "2026-08-25T18:26:12.516703"
+    },
+    {
+      "incident_id": "INC-20260825183751",
+      "overall_score": 75.0,
+      "effectiveness_rating": "Good",
+      "category_scores": {
+        "timeliness": 90.0,
+        "completeness": 100.0,
+        "policy_compliance": 45.0,
+        "resource_allocation": 95.0,
+        "communication": 100.0,
+        "safety_measures": 20.0
+      },
+      "timestamp": "2026-08-25T18:37:52.121676"
+    },
+    {
+      "incident_id": "INC-20260825183802",
+      "overall_score": 75.0,
+      "effectiveness_rating": "Good",
+      "category_scores": {
+        "timeliness": 90.0,
+        "completeness": 100.0,
+        "policy_compliance": 45.0,
+        "resource_allocation": 95.0,
+        "communication": 100.0,
+        "safety_measures": 20.0
+      },
+      "timestamp": "2026-08-25T18:38:02.146424"
+    },
+    {
+      "incident_id": "INC-20260825183802",
+      "overall_score": 75.0,
+      "effectiveness_rating": "Good",
+      "category_scores": {
+        "timeliness": 90.0,
+        "completeness": 100.0,
+        "policy_compliance": 45.0,
+        "resource_allocation": 95.0,
+        "communication": 100.0,
+        "safety_measures": 20.0
+      },
+      "timestamp": "2026-08-25T18:38:02.160784"
+    },
+    {
+      "incident_id": "INC-20260825183802",
+      "overall_score": 75.0,
+      "effectiveness_rating": "Good",
+      "category_scores": {
+        "timeliness": 90.0,
+        "completeness": 100.0,
+        "policy_compliance": 45.0,
+        "resource_allocation": 95.0,
+        "communication": 100.0,
+        "safety_measures": 20.0
+      },
+      "timestamp": "2026-08-25T18:38:02.171175"
+    },
+    {
+      "incident_id": "INC-20260825183802",
+      "overall_score": 97.08,
+      "effectiveness_rating": "Excellent",
+      "category_scores": {
+        "timeliness": 100.0,
+        "completeness": 100.0,
+        "policy_compliance": 82.5,
+        "resource_allocation": 100.0,
+        "communication": 100.0,
+        "safety_measures": 100.0
+      },
+      "timestamp": "2026-08-25T18:38:02.179703"
+    },
+    {
+      "incident_id": "INC-20260825183802",
+      "overall_score": 90.83,
+      "effectiveness_rating": "Excellent",
+      "category_scores": {
+        "timeliness": 100.0,
+        "completeness": 100.0,
+        "policy_compliance": 90.0,
+        "resource_allocation": 95.0,
+        "communication": 100.0,
+        "safety_measures": 60.0
+      },
+      "timestamp": "2026-08-25T18:38:02.188704"
+    }
+  ],
+  "trends": {},
+  "last_updated": "2026-08-25T18:38:02.188704"
+}
