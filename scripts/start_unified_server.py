@@ -50,9 +50,29 @@ from fastapi import Request
 
 @app.middleware("http")
 async def normalize_vercel_api_path(request: Request, call_next):
+    matched = request.headers.get("x-matched-path") or ""
+    forwarded = request.headers.get("x-forwarded-uri") or ""
+    invoke = request.headers.get("x-invoke-path") or ""
+    
     path = request.url.path
+    
+    if path in ["/api", "/api/", "/api/index.py", "/api/index"]:
+        if matched and matched not in ["/api", "/api/index.py"]:
+            path = matched
+        elif forwarded:
+            path = forwarded.split("?")[0]
+        elif invoke:
+            path = invoke.split("?")[0]
+
+    if "?" in path:
+        path = path.split("?")[0]
+
     if not path.startswith("/api/") and (path.startswith("/v1/") or path.startswith("/analytics/")):
-        request.scope["path"] = "/api" + path
+        path = "/api" + path
+
+    if path != request.url.path and path.startswith("/"):
+        request.scope["path"] = path
+
     return await call_next(request)
 
 # Import and integrate the existing realtime API endpoints
