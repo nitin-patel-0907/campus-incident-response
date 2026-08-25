@@ -46,6 +46,15 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+from fastapi import Request
+
+@app.middleware("http")
+async def normalize_vercel_api_path(request: Request, call_next):
+    path = request.url.path
+    if not path.startswith("/api/") and (path.startswith("/v1/") or path.startswith("/analytics/")):
+        request.scope["path"] = "/api" + path
+    return await call_next(request)
+
 # Import and integrate the existing realtime API endpoints
 @app.post("/api/v1/incidents/upload-image")
 async def upload_incident_image(file: UploadFile = File(...), description: str = Form(None)):
@@ -1658,28 +1667,23 @@ async def health_check():
         "active_connections": 0
     }
 
-# Serve frontend static files if available
-frontend_dist = Path("frontend/dist")
-if frontend_dist.exists():
-    app.mount("/assets", StaticFiles(directory=str(frontend_dist / "assets")), name="assets")
-    
-    @app.get("/")
-    async def serve_frontend():
-        return FileResponse(str(frontend_dist / "index.html"))
-    
-    @app.get("/{path:path}")
-    async def serve_frontend_routes(path: str):
-        # Check if it's an API route
-        if path.startswith("api/"):
-            raise HTTPException(status_code=404, detail="API endpoint not found")
+# Serve frontend static files if available when NOT running in Vercel serverless mode
+if not os.environ.get("VERCEL"):
+    frontend_dist = Path("frontend/dist")
+    if frontend_dist.exists():
+        app.mount("/assets", StaticFiles(directory=str(frontend_dist / "assets")), name="assets")
         
-        # Try to serve static file
-        static_file = frontend_dist / path
-        if static_file.exists() and static_file.is_file():
-            return FileResponse(str(static_file))
+        @app.get("/")
+        async def serve_frontend():
+            return FileResponse(str(frontend_dist / "index.html"))
         
-        # Fallback to index.html for client-side routing
-        return FileResponse(str(frontend_dist / "index.html"))
+        @app.get("/{path:path}")
+        async def serve_frontend_routes(path: str):
+            static_file = frontend_dist / path
+            if static_file.exists() and static_file.is_file():
+                return FileResponse(str(static_file))
+            
+            return FileResponse(str(frontend_dist / "index.html"))
 
 def build_frontend():
     """Build the frontend if needed"""

@@ -2,6 +2,9 @@ import sys
 import os
 from pathlib import Path
 
+# Set Vercel environment flag
+os.environ["VERCEL"] = "1"
+
 # Resolve absolute paths
 root_dir = Path(__file__).resolve().parent.parent
 src_dir = root_dir / "src"
