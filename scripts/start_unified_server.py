@@ -77,6 +77,7 @@ async def normalize_vercel_api_path(request: Request, call_next):
 
     if path != request.url.path and path.startswith("/"):
         request.scope["path"] = path
+        request.scope["raw_path"] = path.encode("utf-8")
 
     return await call_next(request)
 
