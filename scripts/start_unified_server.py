@@ -1693,23 +1693,30 @@ async def health_check():
         "active_connections": 0
     }
 
-# Serve frontend static files if available when NOT running in Vercel serverless mode
-if not os.environ.get("VERCEL"):
-    frontend_dist = Path("frontend/dist")
-    if frontend_dist.exists():
-        app.mount("/assets", StaticFiles(directory=str(frontend_dist / "assets")), name="assets")
+# Serve frontend static files if available
+frontend_dist = Path("frontend/dist")
+if not frontend_dist.exists():
+    frontend_dist = Path(__file__).resolve().parent.parent / "frontend" / "dist"
+
+if frontend_dist.exists():
+    assets_dir = frontend_dist / "assets"
+    if assets_dir.exists():
+        app.mount("/assets", StaticFiles(directory=str(assets_dir)), name="assets")
+    
+    @app.get("/")
+    async def serve_frontend():
+        return FileResponse(str(frontend_dist / "index.html"))
+    
+    @app.get("/{path:path}")
+    async def serve_frontend_routes(path: str):
+        if path.startswith("api/") or path == "health":
+            raise HTTPException(status_code=404, detail="API endpoint not found")
         
-        @app.get("/")
-        async def serve_frontend():
-            return FileResponse(str(frontend_dist / "index.html"))
+        static_file = frontend_dist / path
+        if static_file.exists() and static_file.is_file():
+            return FileResponse(str(static_file))
         
-        @app.get("/{path:path}")
-        async def serve_frontend_routes(path: str):
-            static_file = frontend_dist / path
-            if static_file.exists() and static_file.is_file():
-                return FileResponse(str(static_file))
-            
-            return FileResponse(str(frontend_dist / "index.html"))
+        return FileResponse(str(frontend_dist / "index.html"))
 
 def build_frontend():
     """Build the frontend if needed"""
