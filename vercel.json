@@ -9,10 +9,6 @@
     {
       "source": "/health",
       "destination": "/api?path=health"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
     }
   ]
 }
