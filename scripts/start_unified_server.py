@@ -50,13 +50,16 @@ from fastapi import Request
 
 @app.middleware("http")
 async def normalize_vercel_api_path(request: Request, call_next):
+    query_path = request.query_params.get("path") or ""
     matched = request.headers.get("x-matched-path") or ""
     forwarded = request.headers.get("x-forwarded-uri") or ""
     invoke = request.headers.get("x-invoke-path") or ""
     
     path = request.url.path
     
-    if path in ["/api", "/api/", "/api/index.py", "/api/index"]:
+    if query_path:
+        path = query_path if query_path.startswith("/") else "/" + query_path
+    elif path in ["/api", "/api/", "/api/index.py", "/api/index"]:
         if matched and matched not in ["/api", "/api/index.py"]:
             path = matched
         elif forwarded:
@@ -69,6 +72,8 @@ async def normalize_vercel_api_path(request: Request, call_next):
 
     if not path.startswith("/api/") and (path.startswith("/v1/") or path.startswith("/analytics/")):
         path = "/api" + path
+    elif path == "/health" or path == "health":
+        path = "/health"
 
     if path != request.url.path and path.startswith("/"):
         request.scope["path"] = path
