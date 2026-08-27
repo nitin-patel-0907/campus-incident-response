@@ -1,0 +1,8 @@
+{
+  "name": "AI Campus Incident Response System",
+  "description": "AI-powered campus incident response and safety management system with real-time analytics, review queue, and workflow evaluation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
